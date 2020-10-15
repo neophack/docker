@@ -115,6 +115,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libxdmcp-dev \
         libxcb1-dev \
         libxext-dev \
+        gdb \
         libx11-dev && \
     rm -rf /var/lib/apt/lists/*
 COPY --from=glvnd_runtime \
